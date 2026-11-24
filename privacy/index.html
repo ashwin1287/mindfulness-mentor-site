@@ -47,7 +47,9 @@
 <p>To sign in you use your email address and a password, Google, or Apple. Accounts are run by Google Firebase Authentication, which stores your email address, the name you give in the app and, if you sign in with Google or Apple, the identifier those services share. When the app asks my server for a meditation, the server checks your sign-in and sees your account ID, which it uses only to limit how many requests one account can make. It does not store it.</p>
 
 <h2>What leaves your phone when you make a meditation</h2>
-<p><strong>Meditations from cards and goal steps.</strong> The app sends only the kind of meditation (for example, a step on a "calmer at work" path), the time of day, the length and the voice. None of your own words are sent. These meditations are shared: the same script and recording can be played by anyone who asks for the same kind.</p>
+<p><strong>Goal steps.</strong> The app sends only the kind of meditation (for example, a step on a "calmer at work" path), the time of day, the length and the voice. None of your own words are sent.</p>
+<p><strong>Meditations from "Pick what you need right now".</strong> The app sends the kind of meditation, the time of day, the length and the voice, plus any feelings you picked and anything you typed about how you feel. My server only matches those against a list of words to choose a theme, such as "stressed". They are not sent to any AI service, not saved and not written to logs.</p>
+<p>Both kinds are shared: the same script and recording can be played by anyone who asks for the same kind and theme.</p>
 <p><strong>Guided Sessions.</strong> When you type how you feel and ask for a meditation written for you, the app first asks your permission. If you allow it:</p>
 <ul>
   <li>What you typed, and any feelings you picked, are sent to my server and from there to Anthropic (the Claude model), which writes the meditation's script.</li>
