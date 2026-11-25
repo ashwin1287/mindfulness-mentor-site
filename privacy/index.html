@@ -26,7 +26,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="date">Mindful (Mindfulness Mentor) · Last updated 24 November 2026</p>
+<p class="date">Mindful (Mindfulness Mentor) · Last updated 25 November 2026</p>
 
 <div class="summary">
 <ul>
@@ -41,10 +41,10 @@
 <p>Mindful is made by Ashwin Jiwane, an independent developer. If you have a question about your data, write to <a href="mailto:ashwinchatgpt177@gmail.com">ashwinchatgpt177@gmail.com</a>.</p>
 
 <h2>What stays on your phone</h2>
-<p>Your date of birth, country and gender, your answers to the onboarding questions, your goals and their progress, the meditations you have played, your favourites and ratings are stored only on your phone. They are not sent to me or to anyone else. Your country is used on the phone to show the right crisis line.</p>
+<p>Your date of birth, country and gender, your goals and their progress, the meditations you have played, your favourites and ratings, the feelings you pick before a meditation and how each one left you feeling, where in your day you try your practice, your wake-up and sleep times and your reminder time are stored only on your phone. They are not sent to me or to anyone else. Your country is used on the phone to show the right crisis line.</p>
 
 <h2>Your account</h2>
-<p>To sign in you use your email address and a password, Google, or Apple. Accounts are run by Google Firebase Authentication, which stores your email address, the name you give in the app and, if you sign in with Google or Apple, the identifier those services share. When the app asks my server for a meditation, the server checks your sign-in and sees your account ID, which it uses only to limit how many requests one account can make. It does not store it.</p>
+<p>To sign in you use your email address and a password, Google, or Apple. Sign-in is handled by a trusted authentication service, which stores your email address, the name you give in the app and, if you sign in with Google or Apple, the identifier those services share. When the app asks for a meditation, my server checks that you are signed in, and uses your account only to limit how many requests one account can make. It does not store it.</p>
 
 <h2>What leaves your phone when you make a meditation</h2>
 <p><strong>Goal steps.</strong> The app sends only the kind of meditation (for example, a step on a "calmer at work" path), the time of day, the length and the voice. None of your own words are sent.</p>
@@ -52,16 +52,15 @@
 <p>Both kinds are shared: the same script and recording can be played by anyone who asks for the same kind and theme.</p>
 <p><strong>Guided Sessions.</strong> When you type how you feel and ask for a meditation written for you, the app first asks your permission. If you allow it:</p>
 <ul>
-  <li>What you typed, and any feelings you picked, are sent to my server and from there to Anthropic (the Claude model), which writes the meditation's script.</li>
-  <li>That script is sent to Google (the Gemini text-to-speech model) to be read aloud.</li>
-  <li>The recording is saved, under a random name that is not linked to you, with Cloudflare R2, so your phone can play it.</li>
-  <li>My server does not keep your words or the script: they are not saved in its database and not written to its logs.</li>
+  <li>What you typed, and any feelings you picked, are sent to paid AI services that write your meditation and read it aloud.</li>
+  <li>The recording is stored under a random name that is not linked to you, so your phone can play it.</li>
+  <li>Your words and the script are not kept: they are not saved and not written to logs.</li>
 </ul>
-<p>Anthropic and Google process this text under their terms for paid API customers, which say they do not use it to train their models. If you say "Not now", nothing you type is sent, and you can still use card and goal meditations. You can change your answer in Profile.</p>
+<p>These paid AI services do not use your words to train their models. If you say "Not now", nothing you type is sent, and you can still use "Pick what you need right now" and your goal practices. You can change your answer any time in Profile → AI policy.</p>
 <p>Before anything is sent, the app checks your message on your phone. If it looks like you may be in crisis, the session stops, nothing is sent, and the app shows you where to get help.</p>
 
 <h2>Where my server runs</h2>
-<p>My server runs on Render. Shared meditation scripts are stored in a Neon database and recordings in Cloudflare R2. These services store data for me and do not use it for their own purposes.</p>
+<p>My server and storage run with established cloud providers, who store data for me and do not use it for their own purposes. If you would like the list of services I use, write to me and I will send it.</p>
 
 <h2>What I don't do</h2>
 <ul>
